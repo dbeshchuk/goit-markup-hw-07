@@ -775,7 +775,6 @@ button {
   margin-left: 30px;
 }
 
-/* Social block */
 .social-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -805,11 +804,6 @@ button {
   border-radius: 50%;
 }
 
-.social-link:hover, .social-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
 .social-block > li {
   margin-right: 10px;
 }
@@ -824,6 +818,10 @@ button {
   fill: currentColor;
 }
 
+.footer-social {
+  margin-left: 70px;
+}
+
 .footer-social .social-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
@@ -831,6 +829,12 @@ button {
 
 .team-box .social-link {
   color: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 /* Clients section */
@@ -1023,11 +1027,6 @@ footer h2 {
   margin-top: 12px;
   margin-bottom: 20px;
   text-align: left;
-  color: #ffffff;
-}
-
-.footer-social {
-  margin-left: 70px;
   color: #ffffff;
 }
 

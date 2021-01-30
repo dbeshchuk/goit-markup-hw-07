@@ -34,9 +34,13 @@
   fill: currentColor;
 }
 
-.footer-social .social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: $primary-background-color;
+.footer-social {
+  margin-left: 70px;
+
+  & .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $primary-background-color;
+  }
 }
 
 .team-box .social-link {
@@ -45,6 +49,6 @@
 
 .social-link:hover,
 .social-link:focus {
-  color: var(--primary-background-color);
-  background-color: var(--accent-color);
+  color: $primary-background-color;
+  background-color: $accent-color;
 }
