@@ -1,5 +1,3 @@
-/* Social block */
-
 .social-block {
   display: flex;
   align-items: center;
@@ -19,12 +17,6 @@
   border-radius: 50%;
 
   @extend %default-transition;
-
-  &:hover,
-  &:focus {
-    color: $primary-background-color;
-    background-color: $accent-color;
-  }
 }
 
 .social-block > li {
@@ -49,4 +41,10 @@
 
 .team-box .social-link {
   color: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
 }
