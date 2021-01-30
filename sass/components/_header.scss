@@ -1,0 +1,82 @@
+/*Header*/
+
+header {
+  font-style: normal;
+  border-bottom: 1px solid #ececec;
+}
+
+header .link {
+  color: $title-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  @extend %default-transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.current {
+    color: $accent-color;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-nav > .site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav > .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav > .auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav > .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav .link {
+  display: inline-block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.address-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.main-nav svg {
+  vertical-align: sub;
+}
+
+.current {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    background-color: $accent-color;
+    border-radius: 2px;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+  }
+}
